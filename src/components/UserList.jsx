@@ -34,8 +34,8 @@ const users = [
 export const UserList = () => {
   return (
     <div className="user-list">
-      {users.map((user) => (
-        <UserCard key={user.id} user={user} />
+      {users.map((user, index) => (
+        <UserCard key={index} user={user} />
       ))}
     </div>
   );
